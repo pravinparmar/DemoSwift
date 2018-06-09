@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Stream" representedClassName="Stream" syncable="YES">
+        <attribute name="artce" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commerce" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="science" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="strem1" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="student1" inverseEntity="Student" syncable="YES"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="student1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stream" inverseName="strem1" inverseEntity="Stream" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Stream" positionX="-387" positionY="-216" width="128" height="103"/>
+        <element name="Student" positionX="-666" positionY="-297" width="128" height="103"/>
+    </elements>
+</model>
